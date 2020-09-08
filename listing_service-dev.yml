@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    initialization-mode: always
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/listingdb
+    username: user
+    password: user
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      jdbc.lob.non_contextual_creation: true
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    generate-ddl: true
+    

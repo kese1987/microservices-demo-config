@@ -1,1 +1,7 @@
 message:  devMessage1
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
