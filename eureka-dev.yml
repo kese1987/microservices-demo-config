@@ -2,7 +2,7 @@ management.endpoints.web.exposure.include: '*'
 
 server:
   address: localhost
-  port: 24246
+  port: ${PORT:24246}
 
 eureka:
   client:
