@@ -1,9 +1,9 @@
-server.context-path: /api/listing
+server.context-path: /api/user
 spring:
   datasource:
     initialization-mode: always
     platform: postgres
-    url: jdbc:postgresql://localhost:5432/listingdb
+    url: jdbc:postgresql://localhost:5432/userdb
     username: user
     password: user
   jpa:
