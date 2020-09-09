@@ -1,1 +1,9 @@
 management.endpoints.web.exposure.include: '*'
+server:
+  port: ${random.int[30000,999999]}
+eureka:
+  instance:
+    instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${server.port}
+  client:    
+    register-with-eureka: true
+    service-url.defaultZone: http://localhost:24246/eureka

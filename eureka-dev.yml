@@ -1,1 +1,11 @@
 management.endpoints.web.exposure.include: '*'
+
+server:
+  address: localhost
+  port: 24246
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url.defaultZone: http://${server.address}:${server.port}/eureka
