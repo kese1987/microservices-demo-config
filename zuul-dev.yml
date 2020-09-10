@@ -1,0 +1,15 @@
+management.endpoints.web.exposure.include: '*'
+server:
+  port: ${PORT:0}
+eureka:
+  instance:
+    instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${random.int[1,999999]}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url.defaultZone: ${EUREKA_URI:http://localhost:24246/eureka}
+zuul.routes:
+  user_service: 
+    path: /api/user/*
+    serviceId: user_service
+    stripPrefix: true

@@ -1,11 +1,10 @@
 management.endpoints.web.exposure.include: '*'
-server.context-path: /api/user
 server:
-  port: 36365
+  port: 0
 eureka:
   instance:
     instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${random.int[1,999999]}
-  client:    
+  client:
     register-with-eureka: true
     service-url.defaultZone: ${EUREKA_URI:http://localhost:24246/eureka}
 spring:
