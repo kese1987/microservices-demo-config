@@ -22,4 +22,6 @@ spring:
       jdbc.lob.non_contextual_creation: true
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
     generate-ddl: true
+
+logging.level.org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
     
