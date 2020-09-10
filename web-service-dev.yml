@@ -1,5 +1,5 @@
 management.endpoints.web.exposure.include: '*'
-server.port: ${PORT:8080}
+server.port: ${PORT:0}
 eureka:
   instance.instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${random.int[30000,999999]}
   client:    

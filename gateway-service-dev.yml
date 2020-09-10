@@ -1,6 +1,6 @@
 management.endpoints.web.exposure.include: '*'
 server:
-  port: ${PORT:0}
+  port: ${PORT:8080}
 eureka:
   instance:
     instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${random.int[1,999999]}
@@ -12,4 +12,8 @@ zuul.routes:
   user_service: 
     path: /api/user/*
     serviceId: user_service
+    stripPrefix: true
+  web_service:
+    path: /web/*
+    serviceId: web_service
     stripPrefix: true
