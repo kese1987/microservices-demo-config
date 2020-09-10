@@ -9,10 +9,6 @@ eureka:
     fetch-registry: true
     service-url.defaultZone: ${EUREKA_URI:http://localhost:24246/eureka}
 zuul.routes:
-  user-service: 
-    path: /api/user/**
-    serviceId: user-service
-    stripPrefix: true
   web-service:
     path: /web/**
     serviceId: web-service

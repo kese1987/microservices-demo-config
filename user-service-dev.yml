@@ -17,7 +17,7 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
       jdbc.lob.non_contextual_creation: true
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
     generate-ddl: true
