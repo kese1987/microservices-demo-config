@@ -11,9 +11,9 @@ eureka:
 zuul.routes:
   user_service: 
     path: /api/user/*
-    serviceId: user_service
+    serviceId: user-service
     stripPrefix: true
   web_service:
     path: /web/*
-    serviceId: web_service
+    serviceId: web-service
     stripPrefix: true
