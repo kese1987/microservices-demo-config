@@ -1,5 +1,3 @@
-management.endpoints.web.exposure.include: '*'
-
 server:
   address: localhost
   port: ${PORT:24246}
