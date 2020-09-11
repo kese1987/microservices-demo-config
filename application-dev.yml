@@ -11,13 +11,8 @@ eureka:
     fetch-registry: true
     service-url.defaultZone: ${EUREKA_URI:http://localhost:24246/eureka}
     
-events:
-  user-service:
-    exchanges:
-      - exchange:
-          name: user-service-exchange
-          type: header
-        queues: 
-          - queue:
-              name: user-service-events
-              bindining: user.event.#
+spring.rabbitmq:
+  host: localhost
+  port: 5672
+  username: admin
+  password: admin
