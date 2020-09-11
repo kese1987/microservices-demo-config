@@ -1,4 +1,9 @@
 spring:
+  rabbitmq:
+      host: localhost
+      port: 5672
+      username: admin
+      password: admin
   datasource:
     initialization-mode: always
     platform: postgres
@@ -14,4 +19,3 @@ spring:
     generate-ddl: true
 
 logging.level.org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
-    
