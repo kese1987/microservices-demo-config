@@ -10,9 +10,3 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url.defaultZone: ${EUREKA_URI:http://localhost:24246/eureka}
-    
-spring.rabbitmq:
-  host: localhost
-  port: 5672
-  username: admin
-  password: admin

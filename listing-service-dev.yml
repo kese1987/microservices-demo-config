@@ -6,7 +6,7 @@ spring:
     user: admin
     password: admin
     host: localhost
-    port: 5672
+    port: 15672
   datasource:
     initialization-mode: always
     platform: postgres
