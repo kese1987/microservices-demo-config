@@ -2,6 +2,11 @@
 server.context-path: /api/listing
 
 spring:
+  rabbitmq:
+    user: guest
+    password: guest
+    host: localhost
+    port: 5672
   datasource:
     initialization-mode: always
     platform: postgres
